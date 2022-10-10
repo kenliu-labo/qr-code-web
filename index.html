@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jsqr@1.3.1/dist/jsQR.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="sub.js"></script>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content="Web QRCode Reader"/>
+
+    <title>QR_Code</title>
+
+    <style type="text/css">
+        #mycanvas{
+          border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-body">
+                <h1 class="title">Web QRCode</h1>
+                <h1 class="sub-title">Kenliu.labo</h1>
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="is-size-1">リサイズ前画像 <span id="src-width-height">幅: 高さ: </span></p>
+            <p class="is-size-1">リサイズ後画像 <span id="dst-width-height">幅: 高さ: </span></p>
+            <p class="is-size-1"><form id="form1" enctype="multipart/form-data"><input type="file" accept="image/*" capture="camera" name="file" id="file-image"/></form></p>
+            <div class="is-size-1">
+              <canvas id="mycanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <header class="section">
+        <p class="is-size-3">©Kenliu.labo 2022 10 all copy light.</p>
+    </header>
+</body>
+</html>
